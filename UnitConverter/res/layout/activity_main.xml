@@ -1,0 +1,124 @@
+ 
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select The Conversion Type:" />
+   
+    
+
+    
+    <Spinner
+        android:id="@+id/spnParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+       
+        
+
+ 
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spnChild1"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.89" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="To" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spnChild2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Clear" 
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/Swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="Swap" 
+            android:text="Swap" />
+
+        <Button
+            android:id="@+id/Convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="Convert" 
+            android:text="Convert" />
+
+    </LinearLayout>
+</LinearLayout>
+    
+
+
